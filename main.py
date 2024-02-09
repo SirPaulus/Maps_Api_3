@@ -30,13 +30,13 @@ class MainWindow(QMainWindow):
         if event.key() == Qt.Key_PageDown and self.map_zoom > 0:
             self.map_zoom -= 1
         if event.key() == Qt.Key_Right:
-            self.map_ll[0] += 1/(self.map_zoom*2)
+            self.map_ll[0] += 1 / (self.map_zoom * 2)
         if event.key() == Qt.Key_Left:
-            self.map_ll[0] -= 1/(self.map_zoom*2)
+            self.map_ll[0] -= 1 / (self.map_zoom * 2)
         if event.key() == Qt.Key_Up:
-            self.map_ll[1] += 1/(self.map_zoom*2)
+            self.map_ll[1] += 1 / (self.map_zoom * 2)
         if event.key() == Qt.Key_Down:
-            self.map_ll[1] -= 1/(self.map_zoom*2)
+            self.map_ll[1] -= 1 / (self.map_zoom * 2)
         self.refresh_map()
 
     def refresh_map(self):
